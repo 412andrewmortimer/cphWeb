@@ -3,7 +3,7 @@
   *ngIf="bio$ | async as bio"
 >
   <div
-    class="d-flex flex-column min-vh-95 justify-content-center align-items-center w-100"
+    class="muted landing d-flex flex-column min-vh-50 justify-content-center align-items-center w-100"
   >
     <div
       *ngFor="let options of respOptions"
@@ -11,10 +11,8 @@
       class="flex-column justify-content-center align-items-start w-75"
     >
       <h1 [ngClass]="options.headingClass" class="text-left">
-        Hello, 👋. My name is
         <span class="font-weight-bold"
-          >{{ bio.firstName + "
-                    " + bio.lastName }}.</span
+          >{{ bio.companyName }}</span
         >
       </h1>
       <div *ngFor="let par of bio.intro">
@@ -26,8 +24,8 @@
         routerLink="/"
         fragment="projects"
       >
-        See My Work
-        <i class="ml-1 fas fa-angle-right"></i>
+        Come take a look!
+        <i class="ml-1 fas fa-eye"></i>
       </button>
     </div>
   </div>
