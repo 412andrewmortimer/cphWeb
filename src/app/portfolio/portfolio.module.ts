@@ -11,11 +11,11 @@ import { ProjectsComponent } from './projects/projects.component';
   declarations: [
     HomeComponent,
     AboutComponent,
-    ProjectsComponent
+    ProjectsComponent,
   ],
   imports: [
     CommonModule,
-    PortfolioRoutingModule
+    PortfolioRoutingModule,
   ]
 })
 export class PortfolioModule { }

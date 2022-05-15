@@ -1,6 +1,5 @@
 export interface Bio {
-  firstName: string;
-  lastName: string;
+  companyName: string;
   about: string[];
   intro: string[];
 }
